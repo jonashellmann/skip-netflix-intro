@@ -1,21 +1,21 @@
 {
   "manifest_version": 2,
   "name": "Skip Netflix Intro",
-  "version": "1.1",
-
+  "version": "1.2",
   "description": "Addon to automatically skip intros on Netflix",
-  
   "applications": {
     "gecko": {
       "id": "skip_netflix_intro@jonas-hellmann.de"
     }
   },
-
   "content_scripts": [
     {
-      "matches": ["*://*.netflix.com/*"],
-      "js": ["skip_netflix_intro.js"]
+      "matches": [
+        "*://*.netflix.com/*"
+      ],
+      "js": [
+        "skip_netflix_intro.js"
+      ]
     }
   ]
-
 }
